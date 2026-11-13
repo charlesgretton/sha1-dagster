@@ -1,0 +1,14 @@
+sha1-dagster
+Copyright 2026 Charles Gretton
+
+This product includes software developed in the sha1-dagster project.
+Source code is licensed under the Apache License, Version 2.0 (see LICENSE).
+The proceedings, documentation and project-generated data are licensed under CC BY 4.0 (see LICENSE-CC-BY-4.0.md).
+
+This product also includes third-party software under other licences:
+  third_party/sha1-sat/  sha1-sat, Copyright (C) 2011-2012, 2021 Vegard Nossum, modified;
+                         GPL-3.0-or-later (see third_party/sha1-sat/COPYING and MODIFICATIONS.md)
+  portfolio/engines/tinisat_seeded.cc, patches/tinisat-seed.patch
+                         derived from Dagster's TiniSAT, Copyright 2020 Mark Burgess;
+                         GPL-2.0-or-later (see LICENSES/GPL-2.0-or-later.txt)
+See LICENSING.md for which files fall under which licence.

@@ -1,0 +1,15 @@
+{
+ "cap": 1800.0,
+ "invalid": [],
+ "k": 64,
+ "model": "results/dev_Br.Br_g10005_r9.race.race/seed584.model",
+ "pinned": true,
+ "seed": 584,
+ "seed_block": [
+  577,
+  640
+ ],
+ "status": "SOLVED",
+ "t_end": 170.84314894676208,
+ "t_wall": 170.70599031448364
+}

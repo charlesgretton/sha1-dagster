@@ -1,0 +1,36 @@
+Make the standalone TiniSAT's seed reproducible and recordable.
+
+As shipped, tinisat_standalone.cc seeds from the wall clock
+(srandom(genRandomSeed())), so the seed can be neither reproduced nor recorded.
+This patch reads TINISAT_SEED and seeds both srandom() and srand().
+
+IMPORTANT -- this does NOT create a portfolio. In the tested configuration,
+changing the seed did not alter the returned model or the observed trajectory
+(seeds 1, 2 and 3 gave the byte-identical model). Keeping the seeded call is
+harmless, but for real, reproducible diversification use a seeded clause-order
+permutation (portfolio/engines/tinisat_perm.sh) or explicit cube assumptions
+(portfolio/engines/tinisat_cube.sh).
+
+Apply:   cd dagster/dagster && patch -p0 < /path/to/tinisat-seed.patch
+         make -C standalone_tinisat
+
+--- standalone_tinisat/tinisat_standalone.cc
++++ standalone_tinisat/tinisat_standalone.cc
+@@ -68,7 +68,16 @@
+   
+   std::string str ("");
+   clock_t tStart = clock();
+-  srandom(genRandomSeed());
++  {
++    /* TINISAT_SEED makes a run reproducible; absent, fall back to the clock.
++       Seed BOTH generators: SatSolver.cpp uses rand(), not random(). */
++    const char *seed_env = getenv("TINISAT_SEED");
++    unsigned int seed = seed_env ? (unsigned int) strtoul(seed_env, NULL, 10)
++                                 : (unsigned int) genRandomSeed();
++    srandom(seed);
++    srand(seed);
++    fprintf(stderr, "c tinisat seed %u\n", seed);
++  }
+   
+   // load the CNF into new solver
+   Cnf* cnf = new Cnf((const char*)argv[1]);

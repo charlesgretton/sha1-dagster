@@ -1,0 +1,135 @@
+--- a/Worker.cpp
++++ b/Worker.cpp
+@@ -1,3 +1,12 @@
++// DAGSTER_BOUNDED_PATCH v3
++#include <cerrno>
++#include <cstdlib>
++#include <string>
++#include <functional>
++#include <algorithm>
++extern long long dagster_minisat_budget; extern const char* dagster_minisat_role;
++extern long long dagster_minisat_conflicts_this_call; extern long long dagster_minisat_conflicts_total;
++extern bool dagster_minisat_budget_exhausted;
+ /*************************
+ Copyright 2020 Mark Burgess
+ 
+@@ -61,6 +70,26 @@
+ //
+ void Worker::loop() {
+   int solution_count = 0;
++  // ---- DAGSTER_BOUNDED_PATCH v3: parse and validate controls (fatal on invalid input) ----
++  auto env_int = [](const char* name) -> long long {
++    const char* v = getenv(name);
++    if (v == NULL || *v == '\0') return -1;                    // unset
++    char* end = NULL; errno = 0;
++    long long x = strtoll(v, &end, 10);
++    if (errno != 0 || end == v || *end != '\0' || x < 0 || x > 1000000000000LL)
++      LOG(FATAL) << "DAGSTER_PATCH: invalid value " << name << "=" << v << " (need integer 0..1e12)";
++    return x;
++  };
++  const long long max_intermediate = std::max(0LL, env_int("DAGSTER_MAX_INTERMEDIATE_SOLUTIONS"));
++  const long long q_default = std::max(0LL, env_int("DAGSTER_MINISAT_CONFLICT_QUANTUM"));
++  auto role_budget = [&](const char* name) { long long v = env_int(name); return v < 0 ? q_default : v; };
++  const long long budget_terminal = role_budget("DAGSTER_MINISAT_TERMINAL_CONFLICT_BUDGET");
++  const long long budget_intermediate = role_budget("DAGSTER_MINISAT_INTERMEDIATE_CONFLICT_BUDGET");
++  const long long budget_source = role_budget("DAGSTER_MINISAT_SOURCE_CONFLICT_BUDGET");
++  LOG(INFO) << "WORKER " << comms->world_rank << ": DAGSTER_PATCH v3 L=" << max_intermediate
++            << " budget_terminal=" << budget_terminal << " budget_intermediate=" << budget_intermediate
++            << " budget_source=" << budget_source;
++  long long msg_solutions = 0; std::string msg_key; size_t msg_digest = 0;
+   Message* m2 = new Message();
+   Message* working_message = NULL;
+   while (true) {
+@@ -82,13 +111,31 @@
+       VLOG(4) << "I HAVE RECIEVED MESSAGE: " << *m;
+       message_index++;
+       initialise_solver_from_message(m);
++      { std::string key = std::to_string(m->to) + ":";
++        for (size_t q = 0; q < m->assignments.size(); q++) key += std::to_string(m->assignments[q]) + ",";
++        if (key != msg_key) { msg_key = key; msg_solutions = 0; msg_digest = std::hash<std::string>{}(key); } }
+     }
+     
+     if ((message_tag == MPI_TAG_POLL_FOR_REASSIGNMENT) || (message_tag == MPI_TAG_NEW_ASSIGNMENT)) { // proceed to solving for a loaded message
+       VLOG(4) << "WORKER " << comms->world_rank << ": generating new solution";
+       solution_count = 0;
+ generate_new_result:
++      // role of the node being solved: root (self-loop reverse edge), terminal, or intermediate
++      { int nd = m2->to;
++        bool is_root = dag->reverse_connections[nd].size() == 1 && dag->reverse_connections[nd][0] == nd;
++        bool is_terminal = dag->forward_connections[nd].empty();
++        dagster_minisat_role = is_root ? "source" : (is_terminal ? "terminal" : "intermediate");
++        dagster_minisat_budget = is_root ? budget_source : (is_terminal ? budget_terminal : budget_intermediate); }
+       int result = solve_and_generate_message(m2, working_message);
++      if (minisat_mode) VLOG(3) << "WORKER " << comms->world_rank << ": MINISAT_RESULT node=" << m2->to << " role=" << dagster_minisat_role
++              << " msg=" << std::hex << msg_digest << std::dec << " result=" << result
++              << " conflicts_this_call=" << dagster_minisat_conflicts_this_call
++              << " conflicts_total=" << dagster_minisat_conflicts_total;
++      if (minisat_mode && result == 2 && dagster_minisat_budget_exhausted)
++        LOG(INFO) << "WORKER " << comms->world_rank << ": MINISAT_BUDGET_EXHAUSTED node=" << m2->to
++                  << " role=" << dagster_minisat_role << " msg=" << std::hex << msg_digest << std::dec
++                  << " conflicts_this_call=" << dagster_minisat_conflicts_this_call
++                  << " conflicts_total=" << dagster_minisat_conflicts_total;
+       //VLOG(2) << "WORKER " << comms->world_rank << ": generated made " << solver->decisions << " decisions, including "<<solver->num_set_literal << " sets, and " << solver->nConflicts << " conflicts, generating result " << result << " for message " << m2->to;
+       VLOG(4) << "WORKER " << comms->world_rank << ": generated solution " << result;
+       if (result == 0) {
+@@ -101,8 +148,14 @@
+         VLOG(4) << "WORKER " << comms->world_rank << ": Solution message mapped to: " << *m2;
+         comms->send_message(0, MPI_TAG_SOLUTION, m2); // send the full solution to master
+         solution_count++;
++        msg_solutions++;
+         VLOG(4) << "WORKER " << comms->world_rank << ": resetting sathandler";
+-        if ((!reset_solver_for_next_solution(m2)) || (command_line_arguments.ENUMERATE_SOLUTIONS==3)) { // request for assignment if finished, or if enumerate_solutions mode 3 - assuming only one solution to each dag node message
++        bool is_root2 = dag->reverse_connections[m2->to].size() == 1 && dag->reverse_connections[m2->to][0] == m2->to;
++        bool intermediate = !is_root2 && !dag->forward_connections[m2->to].empty();
++        bool retire = intermediate && max_intermediate > 0 && msg_solutions >= max_intermediate;
++        if (retire) LOG(INFO) << "WORKER " << comms->world_rank << ": REFINEMENT_RETIRE node=" << m2->to
++                              << " msg=" << std::hex << msg_digest << std::dec << " emitted_by_this_worker=" << msg_solutions;
++        if (retire || (!reset_solver_for_next_solution(m2)) || (command_line_arguments.ENUMERATE_SOLUTIONS==3)) { // request for assignment if finished, or if enumerate_solutions mode 3 - assuming only one solution to each dag node message
+           VLOG(3) << "WORKER " << comms->world_rank << ": finished generating new solutions, sending assignment request";
+           comms->send_tag(0, MPI_TAG_REQUEST_FOR_ASSIGNMENT);
+         } else if (solution_count >= command_line_arguments.sat_solution_interrupt) {
+--- a/minisat_solver/minisat_solver.cc
++++ b/minisat_solver/minisat_solver.cc
+@@ -1,3 +1,4 @@
++// DAGSTER_BOUNDED_PATCH v3
+ /*************************
+ Copyright 2021 Mark Burgess
+ 
+@@ -33,6 +34,12 @@
+ #include "SimpSolver.h"
+ 
+ using namespace Minisat;
++// ---- DAGSTER_BOUNDED_PATCH v3: per-call budget set by the Worker, and per-call statistics ----
++long long dagster_minisat_budget = 0;
++const char* dagster_minisat_role = "unset";
++long long dagster_minisat_conflicts_this_call = 0;
++long long dagster_minisat_conflicts_total = 0;
++bool dagster_minisat_budget_exhausted = false;
+ 
+ 
+ MinisatSolver::MinisatSolver(Cnf* cnf) {
+@@ -148,9 +155,21 @@
+     if (absent)
+       lits.push(this->unit_assignments[i]);
+   }
+-  bool ret = solve(lits, false, false);
+-  DB(printf("returning %i\n",ret);)
+-  return ret;
++  long long c_entry = (long long) conflicts;
++  dagster_minisat_budget_exhausted = false;
++  int out;
++  if (dagster_minisat_budget > 0) {            // fresh quantum, relative to the current count
++    setConfBudget(dagster_minisat_budget);
++    lbool r = solveLimited(lits, false, false);
++    budgetOff();
++    if (r == l_True) out = 1; else if (r == l_False) out = 0;
++    else { out = 2; dagster_minisat_budget_exhausted = true; }
++  } else {
++    out = solve(lits, false, false) ? 1 : 0;
++  }
++  dagster_minisat_conflicts_this_call = (long long) conflicts - c_entry;
++  dagster_minisat_conflicts_total = (long long) conflicts;
++  return out;
+ }
+ 
+ 

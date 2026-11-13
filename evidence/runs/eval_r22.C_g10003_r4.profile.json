@@ -1,0 +1,44 @@
+{
+ "budget_exhausted_by_role": {},
+ "conflicts_per_completed_job": {
+  "intermediate": {
+   "B50": 1495,
+   "B80": 2038,
+   "B95": 2701,
+   "B99": 3259,
+   "jobs": 48
+  },
+  "source": {
+   "B50": 43689,
+   "B80": 45431,
+   "B95": 49519,
+   "B99": 49519,
+   "jobs": 6
+  },
+  "terminal": {
+   "B50": 21,
+   "B80": 175,
+   "B95": 395,
+   "B99": 566,
+   "jobs": 378
+  }
+ },
+ "refinement": {
+  "descendants_per_parent_max": 11,
+  "descendants_per_parent_mean": 8.3125,
+  "descendants_total": 399,
+  "histogram": {
+   "11": 1,
+   "8": 35,
+   "9": 12
+  },
+  "parents": 48,
+  "retire_events": 48
+ },
+ "service": {
+  "completed": 432,
+  "jobs": 432,
+  "max_quanta_one_job": 10903,
+  "unfinished_jobs_conflicts_top": []
+ }
+}

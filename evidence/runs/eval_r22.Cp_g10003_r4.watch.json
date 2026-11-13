@@ -1,0 +1,16 @@
+{
+ "component": "low16",
+ "invalid_solutions": [],
+ "killed_after_solution": true,
+ "model": "results/eval_r22.Cp_g10003_r4.watch.models/node1_1.model",
+ "node": 1,
+ "replicas_max_workers_on_one_terminal_message": 33,
+ "stall_flagged_at_wall": null,
+ "status": "SOLVED",
+ "t0": 1791782026.616782,
+ "t_end_wall": 207.71676683425903,
+ "t_log": 204.174287,
+ "t_wall": 207.37795162200928,
+ "terminal_emissions_seen": 1,
+ "terminal_jobs_in_flight": 63
+}

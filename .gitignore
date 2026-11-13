@@ -1,0 +1,20 @@
+# LaTeX build products
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+# Python
+__pycache__/
+*.pyc
+# builds and local runs
+bin/
+build-modern/
+portfolio/engines/minisat
+portfolio/engines/tinisat_seeded
+portfolio/engines/kissat
+portfolio/engines/cadical
+results/
+rederived/

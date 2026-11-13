@@ -1,0 +1,12 @@
+{
+ "cap": 1800.0,
+ "invalid": [],
+ "k": 64,
+ "pinned": true,
+ "seed_block": [
+  65,
+  128
+ ],
+ "status": "UNSOLVED",
+ "t_end": 1800.4140088558197
+}

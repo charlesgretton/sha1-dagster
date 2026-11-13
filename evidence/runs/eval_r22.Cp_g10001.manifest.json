@@ -1,0 +1,17 @@
+{
+ "base_clauses": 57255,
+ "clause_order_note": "node clause lists are canonicalised (sorted ranges) by the DAG format",
+ "dag_sha256": "27d7e91d844d0362dcb87c3e15668f700ec7df096916d2844cb3acb41131fcef",
+ "launch_calibrate_joint": "mpirun -n N dagster -m 4 -q 2 -b 0 -e 2 -i 1 -o cal.txt DAG CNF",
+ "launch_race": "mpirun -n N dagster -m 4 -q 2 -b 0 -e 0 -i 1 -o win.txt DAG CNF",
+ "n_components": 1,
+ "n_nodes": 2,
+ "raw": "results/eval_r22.g10001.cnf",
+ "repaired_cnf_sha256": "2088c51da6f0574aba23aa56f0a6cff6b2274508f66ab1ce3c324147943c2367",
+ "rounds": 22,
+ "shared_clauses": 57255,
+ "validation": {
+  "errors": [],
+  "warnings": []
+ }
+}

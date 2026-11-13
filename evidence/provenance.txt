@@ -1,0 +1,35 @@
+# Environment of the reported campaign (Phases A-C). Recorded by the run harness on the campaign
+# workstation, and from the patch manifest. Items the harness did not record are listed as such;
+# the release's scripts/capture_provenance.sh now records them for any rerun (proceedings item R14).
+
+Machine        one workstation: AMD Ryzen Threadripper 3990X 64-Core Processor; 1 socket,
+               64 cores per socket, 2 threads per core (128 logical CPUs); 1 NUMA node;
+               L1d 2 MiB, L1i 2 MiB, L2 32 MiB, L3 256 MiB; max 2900 MHz, frequency boost enabled.
+               The run harness recorded 128 logical CPUs, SMT active and CPU affinity 0-127; the
+               processor details were taken with lscpu on the same machine after the campaign.
+               Logical CPU numbering (lscpu -e=CPU,CORE, after the campaign): CPU i is the first
+               hardware thread of core i for i = 0..63; CPUs 64..127 are the second threads of
+               cores 0..63. The race arm's taskset pinning to CPUs 0-63 was therefore one
+               trajectory per physical core.
+Kernel         Linux 5.4.0-148-generic
+MPI            MPICH with the Hydra process manager; version not recorded
+               Dagster launched as: mpirun -bind-to core -n 65 (rank 0 master, 64 workers);
+               rank-to-core placement not recorded
+Dagster        upstream commit not recorded; stock and patched source files identified by SHA-256
+               in checksums.txt (Worker.cpp, minisat_solver/minisat_solver.cc); patched with
+               patches/dagster_bounded_v3.py (SHA-256 in checksums.txt); patched-binary hash not recorded
+               build: Dagster's Makefile (mpic++ -ggdb -O3 -std=c++17), linking glog, CUDD, zlib and
+               stdc++fs; compiler and library versions not recorded
+MiniSat        2.2, the copy in Dagster's source tree, used inside Dagster (mode 4) and, built with
+               `make engines`, as the portfolio engine (binary SHA-256 in checksums.txt)
+Generator      third_party/sha1-sat/main_noboost.cc, built with g++ -O2 -w -std=c++11
+Python         3.8 (campaign harness and analysis)
+Portfolio      64 trajectories pinned with taskset to logical CPUs 0-63 (race arm) or per-core
+               affinity (census arm); MiniSat -rnd-init -rnd-seed=s
+
+Single-solver benchmark (proceedings, single-solver table): a separate one-core machine
+(Intel Xeon @ 2.10 GHz, Ubuntu 24.04), python-sat 1.9.dev15 (MiniSat 2.2, CaDiCaL 1.9.5),
+pycryptosat 5.17.0 (CryptoMiniSat 5); one seed per cell.
+
+Not recorded   MPICH version, compiler and library versions, Dagster commit, patched
+               Dagster binary hash, rank placement. See proceedings, open item R14.

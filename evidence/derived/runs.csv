@@ -1,0 +1,221 @@
+run_id,phase,step,prefix,arm,target,repeat,L,terminal_budget,status,solved,time_to_verified_preimage_s,end_s,censored,winning_component,winning_seed,seed_block,invalid_solutions,sigkill
+dev_cal.C_g10004_r1,B,B1 calibration,dev_cal,C,g10004,1,8,0,SOLVED,yes,25.893,26.204,no,staged,,,0,no
+dev_cal.C_g10004_r2,B,B1 calibration,dev_cal,C,g10004,2,8,0,SOLVED,yes,25.900,26.218,no,staged,,,0,no
+dev_cal.C_g10004_r3,B,B1 calibration,dev_cal,C,g10004,3,8,0,SOLVED,yes,16.034,16.348,no,staged,,,0,no
+dev_cal.C_g10004_r4,B,B1 calibration,dev_cal,C,g10004,4,8,0,SOLVED,yes,35.715,36.033,no,staged,,,0,no
+dev_cal.C_g10004_r5,B,B1 calibration,dev_cal,C,g10004,5,8,0,SOLVED,yes,10.298,10.604,no,staged,,,0,no
+dev_cal.C_g10005_r1,B,B1 calibration,dev_cal,C,g10005,1,8,0,SOLVED,yes,56.611,56.934,no,staged,,,0,no
+dev_cal.C_g10005_r2,B,B1 calibration,dev_cal,C,g10005,2,8,0,SOLVED,yes,11.088,11.407,no,staged,,,0,no
+dev_cal.C_g10005_r3,B,B1 calibration,dev_cal,C,g10005,3,8,0,SOLVED,yes,21.472,21.785,no,staged,,,0,no
+dev_cal.C_g10005_r4,B,B1 calibration,dev_cal,C,g10005,4,8,0,SOLVED,yes,25.939,26.249,no,staged,,,0,no
+dev_cal.C_g10005_r5,B,B1 calibration,dev_cal,C,g10005,5,8,0,SOLVED,yes,4.992,5.187,no,staged,,,0,no
+dev_Br.Br_g10004_r1,B,B2 portfolio races,dev_Br,Br,g10004,1,,,SOLVED,yes,521.193,521.408,no,,74,65-128,0,
+dev_Br.Br_g10004_r2,B,B2 portfolio races,dev_Br,Br,g10004,2,,,SOLVED,yes,213.990,214.185,no,,187,129-192,0,
+dev_Br.Br_g10004_r3,B,B2 portfolio races,dev_Br,Br,g10004,3,,,SOLVED,yes,677.014,677.237,no,,219,193-256,0,
+dev_Br.Br_g10004_r4,B,B2 portfolio races,dev_Br,Br,g10004,4,,,SOLVED,yes,1446.660,1446.939,no,,275,257-320,0,
+dev_Br.Br_g10004_r5,B,B2 portfolio races,dev_Br,Br,g10004,5,,,SOLVED,yes,418.757,418.922,no,,322,321-384,0,
+dev_Br.Br_g10004_r6,B,B2 portfolio races,dev_Br,Br,g10004,6,,,SOLVED,yes,1492.750,1493.032,no,,418,385-448,0,
+dev_Br.Br_g10004_r7,B,B2 portfolio races,dev_Br,Br,g10004,7,,,SOLVED,yes,800.836,801.012,no,,512,449-512,0,
+dev_Br.Br_g10004_r8,B,B2 portfolio races,dev_Br,Br,g10004,8,,,SOLVED,yes,365.445,365.610,no,,558,513-576,0,
+dev_Br.Br_g10004_r9,B,B2 portfolio races,dev_Br,Br,g10004,9,,,SOLVED,yes,1411.296,1411.544,no,,592,577-640,0,
+dev_Br.Br_g10004_r10,B,B2 portfolio races,dev_Br,Br,g10004,10,,,SOLVED,yes,499.602,499.798,no,,684,641-704,0,
+dev_Br.Br_g10005_r1,B,B2 portfolio races,dev_Br,Br,g10005,1,,,SOLVED,yes,1607.162,1607.468,no,,77,65-128,0,
+dev_Br.Br_g10005_r2,B,B2 portfolio races,dev_Br,Br,g10005,2,,,SOLVED,yes,116.329,116.444,no,,161,129-192,0,
+dev_Br.Br_g10005_r3,B,B2 portfolio races,dev_Br,Br,g10005,3,,,SOLVED,yes,1647.700,1648.016,no,,193,193-256,0,
+dev_Br.Br_g10005_r4,B,B2 portfolio races,dev_Br,Br,g10005,4,,,SOLVED,yes,204.875,205.059,no,,311,257-320,0,
+dev_Br.Br_g10005_r5,B,B2 portfolio races,dev_Br,Br,g10005,5,,,SOLVED,yes,520.645,520.861,no,,365,321-384,0,
+dev_Br.Br_g10005_r6,B,B2 portfolio races,dev_Br,Br,g10005,6,,,SOLVED,yes,342.621,342.779,no,,436,385-448,0,
+dev_Br.Br_g10005_r7,B,B2 portfolio races,dev_Br,Br,g10005,7,,,SOLVED,yes,203.230,203.402,no,,490,449-512,0,
+dev_Br.Br_g10005_r8,B,B2 portfolio races,dev_Br,Br,g10005,8,,,UNSOLVED,no,,1800.404,yes,,,513-576,0,
+dev_Br.Br_g10005_r9,B,B2 portfolio races,dev_Br,Br,g10005,9,,,SOLVED,yes,170.706,170.843,no,,584,577-640,0,
+dev_Br.Br_g10005_r10,B,B2 portfolio races,dev_Br,Br,g10005,10,,,SOLVED,yes,462.309,462.474,no,,658,641-704,0,
+dev_L0.C_g10004_r1,B,B2 unbounded,dev_L0,C,g10004,1,inf,0,SOLVED,yes,151.731,153.812,no,part16_11,,,0,no
+dev_L0.C_g10004_r2,B,B2 unbounded,dev_L0,C,g10004,2,inf,0,UNSOLVED,no,,373.303,yes,,,,0,yes
+dev_L0.C_g10004_r3,B,B2 unbounded,dev_L0,C,g10004,3,inf,0,SOLVED,yes,144.333,146.282,no,part16_11,,,0,no
+dev_L0.C_g10004_r4,B,B2 unbounded,dev_L0,C,g10004,4,inf,0,SOLVED,yes,144.905,146.727,no,part16_11,,,0,no
+dev_L0.C_g10004_r5,B,B2 unbounded,dev_L0,C,g10004,5,inf,0,SOLVED,yes,8.118,8.431,no,staged,,,0,no
+dev_L0.C_g10004_r6,B,B2 unbounded,dev_L0,C,g10004,6,inf,0,UNSOLVED,no,,290.201,yes,,,,0,yes
+dev_L0.C_g10004_r7,B,B2 unbounded,dev_L0,C,g10004,7,inf,0,UNSOLVED,no,,427.083,yes,,,,0,yes
+dev_L0.C_g10004_r8,B,B2 unbounded,dev_L0,C,g10004,8,inf,0,SOLVED,yes,144.400,146.237,no,part16_11,,,0,no
+dev_L0.C_g10004_r9,B,B2 unbounded,dev_L0,C,g10004,9,inf,0,SOLVED,yes,153.862,155.839,no,part16_11,,,0,no
+dev_L0.C_g10004_r10,B,B2 unbounded,dev_L0,C,g10004,10,inf,0,SOLVED,yes,177.396,179.670,no,part16_11,,,0,no
+dev_L0.C_g10005_r1,B,B2 unbounded,dev_L0,C,g10005,1,inf,0,UNSOLVED,no,,319.287,yes,,,,0,yes
+dev_L0.C_g10005_r2,B,B2 unbounded,dev_L0,C,g10005,2,inf,0,UNSOLVED,no,,276.987,yes,,,,0,yes
+dev_L0.C_g10005_r3,B,B2 unbounded,dev_L0,C,g10005,3,inf,0,UNSOLVED,no,,272.050,yes,,,,0,yes
+dev_L0.C_g10005_r4,B,B2 unbounded,dev_L0,C,g10005,4,inf,0,SOLVED,yes,20.431,20.865,no,staged,,,0,no
+dev_L0.C_g10005_r5,B,B2 unbounded,dev_L0,C,g10005,5,inf,0,SOLVED,yes,39.484,40.056,no,staged,,,0,no
+dev_L0.C_g10005_r6,B,B2 unbounded,dev_L0,C,g10005,6,inf,0,SOLVED,yes,81.864,83.058,no,staged,,,0,no
+dev_L0.C_g10005_r7,B,B2 unbounded,dev_L0,C,g10005,7,inf,0,SOLVED,yes,220.100,222.785,no,staged,,,0,no
+dev_L0.C_g10005_r8,B,B2 unbounded,dev_L0,C,g10005,8,inf,0,SOLVED,yes,50.943,51.763,no,staged,,,0,no
+dev_L0.C_g10005_r9,B,B2 unbounded,dev_L0,C,g10005,9,inf,0,SOLVED,yes,152.177,154.069,no,staged,,,0,no
+dev_L0.C_g10005_r10,B,B2 unbounded,dev_L0,C,g10005,10,inf,0,SOLVED,yes,170.332,172.523,no,staged,,,0,no
+dev_L8_B0.C_g10004_r1,B,B3 no budget,dev_L8_B0,C,g10004,1,8,0,SOLVED,yes,16.520,16.837,no,staged,,,0,no
+dev_L8_B0.C_g10004_r2,B,B3 no budget,dev_L8_B0,C,g10004,2,8,0,SOLVED,yes,25.970,26.290,no,staged,,,0,no
+dev_L8_B0.C_g10004_r3,B,B3 no budget,dev_L8_B0,C,g10004,3,8,0,SOLVED,yes,10.092,10.406,no,staged,,,0,no
+dev_L8_B0.C_g10004_r4,B,B3 no budget,dev_L8_B0,C,g10004,4,8,0,SOLVED,yes,4.006,4.198,no,staged,,,0,no
+dev_L8_B0.C_g10004_r5,B,B3 no budget,dev_L8_B0,C,g10004,5,8,0,SOLVED,yes,105.372,105.693,no,staged,,,0,no
+dev_L8_B0.C_g10004_r6,B,B3 no budget,dev_L8_B0,C,g10004,6,8,0,SOLVED,yes,33.124,33.443,no,staged,,,0,no
+dev_L8_B0.C_g10004_r7,B,B3 no budget,dev_L8_B0,C,g10004,7,8,0,SOLVED,yes,10.971,11.293,no,staged,,,0,no
+dev_L8_B0.C_g10004_r8,B,B3 no budget,dev_L8_B0,C,g10004,8,8,0,SOLVED,yes,76.724,77.050,no,staged,,,0,no
+dev_L8_B0.C_g10004_r9,B,B3 no budget,dev_L8_B0,C,g10004,9,8,0,SOLVED,yes,100.502,100.826,no,staged,,,0,no
+dev_L8_B0.C_g10004_r10,B,B3 no budget,dev_L8_B0,C,g10004,10,8,0,SOLVED,yes,104.202,104.525,no,staged,,,0,no
+dev_L8_B0.C_g10005_r1,B,B3 no budget,dev_L8_B0,C,g10005,1,8,0,SOLVED,yes,8.832,9.025,no,staged,,,0,no
+dev_L8_B0.C_g10005_r2,B,B3 no budget,dev_L8_B0,C,g10005,2,8,0,SOLVED,yes,7.192,7.511,no,staged,,,0,no
+dev_L8_B0.C_g10005_r3,B,B3 no budget,dev_L8_B0,C,g10005,3,8,0,SOLVED,yes,14.516,14.833,no,staged,,,0,no
+dev_L8_B0.C_g10005_r4,B,B3 no budget,dev_L8_B0,C,g10005,4,8,0,SOLVED,yes,3.902,4.096,no,staged,,,0,no
+dev_L8_B0.C_g10005_r5,B,B3 no budget,dev_L8_B0,C,g10005,5,8,0,SOLVED,yes,39.135,39.448,no,staged,,,0,no
+dev_L8_B0.C_g10005_r6,B,B3 no budget,dev_L8_B0,C,g10005,6,8,0,SOLVED,yes,19.136,19.453,no,staged,,,0,no
+dev_L8_B0.C_g10005_r7,B,B3 no budget,dev_L8_B0,C,g10005,7,8,0,SOLVED,yes,26.556,26.873,no,staged,,,0,no
+dev_L8_B0.C_g10005_r8,B,B3 no budget,dev_L8_B0,C,g10005,8,8,0,SOLVED,yes,57.021,57.346,no,staged,,,0,no
+dev_L8_B0.C_g10005_r9,B,B3 no budget,dev_L8_B0,C,g10005,9,8,0,SOLVED,yes,23.514,23.834,no,staged,,,0,no
+dev_L8_B0.C_g10005_r10,B,B3 no budget,dev_L8_B0,C,g10005,10,8,0,SOLVED,yes,6.120,6.316,no,staged,,,0,no
+dev_L8_B2000.C_g10004_r1,B,B3 budget,dev_L8_B2000,C,g10004,1,8,2000,SOLVED,yes,41.626,41.680,no,staged,,,0,no
+dev_L8_B2000.C_g10004_r2,B,B3 budget,dev_L8_B2000,C,g10004,2,8,2000,SOLVED,yes,41.476,41.534,no,staged,,,0,no
+dev_L8_B2000.C_g10004_r3,B,B3 budget,dev_L8_B2000,C,g10004,3,8,2000,SOLVED,yes,37.424,37.475,no,staged,,,0,no
+dev_L8_B2000.C_g10004_r4,B,B3 budget,dev_L8_B2000,C,g10004,4,8,2000,SOLVED,yes,71.993,72.048,no,staged,,,0,no
+dev_L8_B2000.C_g10004_r5,B,B3 budget,dev_L8_B2000,C,g10004,5,8,2000,SOLVED,yes,5.489,5.540,no,staged,,,0,no
+dev_L8_B2000.C_g10004_r6,B,B3 budget,dev_L8_B2000,C,g10004,6,8,2000,SOLVED,yes,151.881,151.937,no,staged,,,0,no
+dev_L8_B2000.C_g10004_r7,B,B3 budget,dev_L8_B2000,C,g10004,7,8,2000,SOLVED,yes,129.397,129.452,no,staged,,,0,no
+dev_L8_B2000.C_g10004_r8,B,B3 budget,dev_L8_B2000,C,g10004,8,8,2000,SOLVED,yes,11.845,11.899,no,staged,,,0,no
+dev_L8_B2000.C_g10004_r9,B,B3 budget,dev_L8_B2000,C,g10004,9,8,2000,SOLVED,yes,14.999,15.053,no,staged,,,0,no
+dev_L8_B2000.C_g10004_r10,B,B3 budget,dev_L8_B2000,C,g10004,10,8,2000,SOLVED,yes,151.869,151.925,no,staged,,,0,no
+dev_L8_B2000.C_g10005_r1,B,B3 budget,dev_L8_B2000,C,g10005,1,8,2000,SOLVED,yes,11.816,11.868,no,staged,,,0,no
+dev_L8_B2000.C_g10005_r2,B,B3 budget,dev_L8_B2000,C,g10005,2,8,2000,SOLVED,yes,302.783,302.838,no,staged,,,0,no
+dev_L8_B2000.C_g10005_r3,B,B3 budget,dev_L8_B2000,C,g10005,3,8,2000,SOLVED,yes,8.296,8.349,no,staged,,,0,no
+dev_L8_B2000.C_g10005_r4,B,B3 budget,dev_L8_B2000,C,g10005,4,8,2000,SOLVED,yes,172.775,172.829,no,staged,,,0,no
+dev_L8_B2000.C_g10005_r5,B,B3 budget,dev_L8_B2000,C,g10005,5,8,2000,SOLVED,yes,41.085,41.141,no,staged,,,0,no
+dev_L8_B2000.C_g10005_r6,B,B3 budget,dev_L8_B2000,C,g10005,6,8,2000,SOLVED,yes,15.257,15.312,no,staged,,,0,no
+dev_L8_B2000.C_g10005_r7,B,B3 budget,dev_L8_B2000,C,g10005,7,8,2000,SOLVED,yes,456.201,456.387,no,staged,,,0,no
+dev_L8_B2000.C_g10005_r8,B,B3 budget,dev_L8_B2000,C,g10005,8,8,2000,SOLVED,yes,42.483,42.537,no,staged,,,0,no
+dev_L8_B2000.C_g10005_r9,B,B3 budget,dev_L8_B2000,C,g10005,9,8,2000,SOLVED,yes,71.490,71.544,no,staged,,,0,no
+dev_L8_B2000.C_g10005_r10,B,B3 budget,dev_L8_B2000,C,g10005,10,8,2000,UNSOLVED,no,,1920.357,yes,,,,0,no
+dev_L8_B20000.C_g10004_r1,B,B3 budget,dev_L8_B20000,C,g10004,1,8,20000,SOLVED,yes,5.622,5.936,no,staged,,,0,no
+dev_L8_B20000.C_g10004_r2,B,B3 budget,dev_L8_B20000,C,g10004,2,8,20000,SOLVED,yes,251.541,251.855,no,part16_01,,,0,no
+dev_L8_B20000.C_g10004_r3,B,B3 budget,dev_L8_B20000,C,g10004,3,8,20000,SOLVED,yes,103.270,103.582,no,staged,,,0,no
+dev_L8_B20000.C_g10004_r4,B,B3 budget,dev_L8_B20000,C,g10004,4,8,20000,SOLVED,yes,30.162,30.470,no,staged,,,0,no
+dev_L8_B20000.C_g10004_r5,B,B3 budget,dev_L8_B20000,C,g10004,5,8,20000,SOLVED,yes,123.946,124.263,no,staged,,,0,no
+dev_L8_B20000.C_g10004_r6,B,B3 budget,dev_L8_B20000,C,g10004,6,8,20000,SOLVED,yes,32.956,33.270,no,staged,,,0,no
+dev_L8_B20000.C_g10004_r7,B,B3 budget,dev_L8_B20000,C,g10004,7,8,20000,SOLVED,yes,41.176,41.501,no,staged,,,0,no
+dev_L8_B20000.C_g10004_r8,B,B3 budget,dev_L8_B20000,C,g10004,8,8,20000,SOLVED,yes,33.074,33.388,no,staged,,,0,no
+dev_L8_B20000.C_g10004_r9,B,B3 budget,dev_L8_B20000,C,g10004,9,8,20000,SOLVED,yes,3.752,3.944,no,staged,,,0,no
+dev_L8_B20000.C_g10004_r10,B,B3 budget,dev_L8_B20000,C,g10004,10,8,20000,SOLVED,yes,3.720,3.918,no,staged,,,0,no
+dev_L8_B20000.C_g10005_r1,B,B3 budget,dev_L8_B20000,C,g10005,1,8,20000,SOLVED,yes,13.734,14.048,no,staged,,,0,no
+dev_L8_B20000.C_g10005_r2,B,B3 budget,dev_L8_B20000,C,g10005,2,8,20000,SOLVED,yes,18.659,18.971,no,staged,,,0,no
+dev_L8_B20000.C_g10005_r3,B,B3 budget,dev_L8_B20000,C,g10005,3,8,20000,SOLVED,yes,90.125,90.441,no,staged,,,0,no
+dev_L8_B20000.C_g10005_r4,B,B3 budget,dev_L8_B20000,C,g10005,4,8,20000,SOLVED,yes,31.117,31.429,no,staged,,,0,no
+dev_L8_B20000.C_g10005_r5,B,B3 budget,dev_L8_B20000,C,g10005,5,8,20000,SOLVED,yes,7.070,7.269,no,staged,,,0,no
+dev_L8_B20000.C_g10005_r6,B,B3 budget,dev_L8_B20000,C,g10005,6,8,20000,SOLVED,yes,6.540,6.851,no,staged,,,0,no
+dev_L8_B20000.C_g10005_r7,B,B3 budget,dev_L8_B20000,C,g10005,7,8,20000,SOLVED,yes,42.909,43.218,no,staged,,,0,no
+dev_L8_B20000.C_g10005_r8,B,B3 budget,dev_L8_B20000,C,g10005,8,8,20000,SOLVED,yes,31.781,32.093,no,staged,,,0,no
+dev_L8_B20000.C_g10005_r9,B,B3 budget,dev_L8_B20000,C,g10005,9,8,20000,SOLVED,yes,30.359,30.671,no,staged,,,0,no
+dev_L8_B20000.C_g10005_r10,B,B3 budget,dev_L8_B20000,C,g10005,10,8,20000,SOLVED,yes,19.915,20.231,no,staged,,,0,no
+dev_L8_B200000.C_g10004_r1,B,B3 budget,dev_L8_B200000,C,g10004,1,8,200000,SOLVED,yes,202.423,202.741,no,staged,,,0,no
+dev_L8_B200000.C_g10004_r2,B,B3 budget,dev_L8_B200000,C,g10004,2,8,200000,SOLVED,yes,6.108,6.424,no,staged,,,0,no
+dev_L8_B200000.C_g10004_r3,B,B3 budget,dev_L8_B200000,C,g10004,3,8,200000,SOLVED,yes,61.217,61.539,no,staged,,,0,no
+dev_L8_B200000.C_g10004_r4,B,B3 budget,dev_L8_B200000,C,g10004,4,8,200000,SOLVED,yes,97.975,98.294,no,staged,,,0,no
+dev_L8_B200000.C_g10004_r5,B,B3 budget,dev_L8_B200000,C,g10004,5,8,200000,SOLVED,yes,264.272,264.589,no,staged,,,0,no
+dev_L8_B200000.C_g10004_r6,B,B3 budget,dev_L8_B200000,C,g10004,6,8,200000,SOLVED,yes,139.668,139.985,no,staged,,,0,no
+dev_L8_B200000.C_g10004_r7,B,B3 budget,dev_L8_B200000,C,g10004,7,8,200000,SOLVED,yes,13.346,13.661,no,staged,,,0,no
+dev_L8_B200000.C_g10004_r8,B,B3 budget,dev_L8_B200000,C,g10004,8,8,200000,SOLVED,yes,181.418,181.734,no,staged,,,0,no
+dev_L8_B200000.C_g10004_r9,B,B3 budget,dev_L8_B200000,C,g10004,9,8,200000,SOLVED,yes,3.447,3.636,no,staged,,,0,no
+dev_L8_B200000.C_g10004_r10,B,B3 budget,dev_L8_B200000,C,g10004,10,8,200000,SOLVED,yes,73.520,73.839,no,staged,,,0,no
+dev_L8_B200000.C_g10005_r1,B,B3 budget,dev_L8_B200000,C,g10005,1,8,200000,SOLVED,yes,3.859,4.056,no,staged,,,0,no
+dev_L8_B200000.C_g10005_r2,B,B3 budget,dev_L8_B200000,C,g10005,2,8,200000,SOLVED,yes,67.023,67.339,no,staged,,,0,no
+dev_L8_B200000.C_g10005_r3,B,B3 budget,dev_L8_B200000,C,g10005,3,8,200000,SOLVED,yes,152.082,152.404,no,staged,,,0,no
+dev_L8_B200000.C_g10005_r4,B,B3 budget,dev_L8_B200000,C,g10005,4,8,200000,SOLVED,yes,26.112,26.425,no,staged,,,0,no
+dev_L8_B200000.C_g10005_r5,B,B3 budget,dev_L8_B200000,C,g10005,5,8,200000,SOLVED,yes,64.871,65.196,no,staged,,,0,no
+dev_L8_B200000.C_g10005_r6,B,B3 budget,dev_L8_B200000,C,g10005,6,8,200000,SOLVED,yes,13.313,13.630,no,staged,,,0,no
+dev_L8_B200000.C_g10005_r7,B,B3 budget,dev_L8_B200000,C,g10005,7,8,200000,SOLVED,yes,24.358,24.670,no,staged,,,0,no
+dev_L8_B200000.C_g10005_r8,B,B3 budget,dev_L8_B200000,C,g10005,8,8,200000,SOLVED,yes,4.372,4.566,no,staged,,,0,no
+dev_L8_B200000.C_g10005_r9,B,B3 budget,dev_L8_B200000,C,g10005,9,8,200000,SOLVED,yes,43.732,44.046,no,staged,,,0,no
+dev_L8_B200000.C_g10005_r10,B,B3 budget,dev_L8_B200000,C,g10005,10,8,200000,SOLVED,yes,31.130,31.448,no,staged,,,0,no
+eval_r22.Br_g10001_r1,C,C locked evaluation,eval_r22,Br,g10001,1,,,UNSOLVED,no,,1800.414,yes,,,65-128,0,
+eval_r22.Br_g10001_r2,C,C locked evaluation,eval_r22,Br,g10001,2,,,SOLVED,yes,603.931,604.196,no,,185,129-192,0,
+eval_r22.Br_g10001_r3,C,C locked evaluation,eval_r22,Br,g10001,3,,,SOLVED,yes,87.670,87.800,no,,250,193-256,0,
+eval_r22.Br_g10001_r4,C,C locked evaluation,eval_r22,Br,g10001,4,,,SOLVED,yes,1150.775,1150.990,no,,301,257-320,0,
+eval_r22.Br_g10001_r5,C,C locked evaluation,eval_r22,Br,g10001,5,,,SOLVED,yes,492.784,493.000,no,,381,321-384,0,
+eval_r22.Br_g10001_r6,C,C locked evaluation,eval_r22,Br,g10001,6,,,SOLVED,yes,966.306,966.524,no,,407,385-448,0,
+eval_r22.Br_g10001_r7,C,C locked evaluation,eval_r22,Br,g10001,7,,,SOLVED,yes,1298.008,1298.227,no,,469,449-512,0,
+eval_r22.Br_g10001_r8,C,C locked evaluation,eval_r22,Br,g10001,8,,,SOLVED,yes,346.281,346.437,no,,515,513-576,0,
+eval_r22.Br_g10001_r9,C,C locked evaluation,eval_r22,Br,g10001,9,,,SOLVED,yes,289.757,289.890,no,,584,577-640,0,
+eval_r22.Br_g10001_r10,C,C locked evaluation,eval_r22,Br,g10001,10,,,SOLVED,yes,653.422,653.701,no,,666,641-704,0,
+eval_r22.Br_g10002_r1,C,C locked evaluation,eval_r22,Br,g10002,1,,,SOLVED,yes,480.352,480.533,no,,128,65-128,0,
+eval_r22.Br_g10002_r2,C,C locked evaluation,eval_r22,Br,g10002,2,,,SOLVED,yes,551.359,551.585,no,,142,129-192,0,
+eval_r22.Br_g10002_r3,C,C locked evaluation,eval_r22,Br,g10002,3,,,SOLVED,yes,553.861,554.093,no,,197,193-256,0,
+eval_r22.Br_g10002_r4,C,C locked evaluation,eval_r22,Br,g10002,4,,,SOLVED,yes,481.587,481.767,no,,310,257-320,0,
+eval_r22.Br_g10002_r5,C,C locked evaluation,eval_r22,Br,g10002,5,,,SOLVED,yes,481.436,481.624,no,,365,321-384,0,
+eval_r22.Br_g10002_r6,C,C locked evaluation,eval_r22,Br,g10002,6,,,SOLVED,yes,734.719,734.945,no,,394,385-448,0,
+eval_r22.Br_g10002_r7,C,C locked evaluation,eval_r22,Br,g10002,7,,,SOLVED,yes,444.912,445.078,no,,462,449-512,0,
+eval_r22.Br_g10002_r8,C,C locked evaluation,eval_r22,Br,g10002,8,,,SOLVED,yes,584.976,585.209,no,,558,513-576,0,
+eval_r22.Br_g10002_r9,C,C locked evaluation,eval_r22,Br,g10002,9,,,SOLVED,yes,930.172,930.388,no,,627,577-640,0,
+eval_r22.Br_g10002_r10,C,C locked evaluation,eval_r22,Br,g10002,10,,,SOLVED,yes,434.617,434.782,no,,656,641-704,0,
+eval_r22.Br_g10003_r1,C,C locked evaluation,eval_r22,Br,g10003,1,,,SOLVED,yes,1411.163,1411.412,no,,72,65-128,0,
+eval_r22.Br_g10003_r2,C,C locked evaluation,eval_r22,Br,g10003,2,,,SOLVED,yes,1753.451,1753.774,no,,187,129-192,0,
+eval_r22.Br_g10003_r3,C,C locked evaluation,eval_r22,Br,g10003,3,,,SOLVED,yes,960.304,960.519,no,,249,193-256,0,
+eval_r22.Br_g10003_r4,C,C locked evaluation,eval_r22,Br,g10003,4,,,SOLVED,yes,761.986,762.174,no,,266,257-320,0,
+eval_r22.Br_g10003_r5,C,C locked evaluation,eval_r22,Br,g10003,5,,,UNSOLVED,no,,1800.358,yes,,,321-384,0,
+eval_r22.Br_g10003_r6,C,C locked evaluation,eval_r22,Br,g10003,6,,,SOLVED,yes,62.366,62.481,no,,439,385-448,0,
+eval_r22.Br_g10003_r7,C,C locked evaluation,eval_r22,Br,g10003,7,,,SOLVED,yes,1676.229,1676.558,no,,495,449-512,0,
+eval_r22.Br_g10003_r8,C,C locked evaluation,eval_r22,Br,g10003,8,,,SOLVED,yes,296.688,296.853,no,,544,513-576,0,
+eval_r22.Br_g10003_r9,C,C locked evaluation,eval_r22,Br,g10003,9,,,SOLVED,yes,487.833,488.015,no,,619,577-640,0,
+eval_r22.Br_g10003_r10,C,C locked evaluation,eval_r22,Br,g10003,10,,,SOLVED,yes,335.831,335.996,no,,662,641-704,0,
+eval_r22.C_g10001_r1,C,C locked evaluation,eval_r22,C,g10001,1,8,0,SOLVED,yes,7.688,8.014,no,staged,,,0,no
+eval_r22.C_g10001_r2,C,C locked evaluation,eval_r22,C,g10001,2,8,0,SOLVED,yes,153.790,154.123,no,staged,,,0,no
+eval_r22.C_g10001_r3,C,C locked evaluation,eval_r22,C,g10001,3,8,0,SOLVED,yes,34.579,34.910,no,staged,,,0,no
+eval_r22.C_g10001_r4,C,C locked evaluation,eval_r22,C,g10001,4,8,0,SOLVED,yes,135.612,136.063,no,staged,,,0,no
+eval_r22.C_g10001_r5,C,C locked evaluation,eval_r22,C,g10001,5,8,0,SOLVED,yes,15.065,15.395,no,staged,,,0,no
+eval_r22.C_g10001_r6,C,C locked evaluation,eval_r22,C,g10001,6,8,0,SOLVED,yes,11.009,11.336,no,staged,,,0,no
+eval_r22.C_g10001_r7,C,C locked evaluation,eval_r22,C,g10001,7,8,0,SOLVED,yes,13.622,13.947,no,staged,,,0,no
+eval_r22.C_g10001_r8,C,C locked evaluation,eval_r22,C,g10001,8,8,0,SOLVED,yes,30.641,30.971,no,staged,,,0,no
+eval_r22.C_g10001_r9,C,C locked evaluation,eval_r22,C,g10001,9,8,0,SOLVED,yes,75.276,75.609,no,staged,,,0,no
+eval_r22.C_g10001_r10,C,C locked evaluation,eval_r22,C,g10001,10,8,0,SOLVED,yes,20.672,21.006,no,staged,,,0,no
+eval_r22.C_g10002_r1,C,C locked evaluation,eval_r22,C,g10002,1,8,0,SOLVED,yes,27.049,27.377,no,staged,,,0,no
+eval_r22.C_g10002_r2,C,C locked evaluation,eval_r22,C,g10002,2,8,0,SOLVED,yes,24.419,24.744,no,staged,,,0,no
+eval_r22.C_g10002_r3,C,C locked evaluation,eval_r22,C,g10002,3,8,0,SOLVED,yes,68.349,68.675,no,staged,,,0,no
+eval_r22.C_g10002_r4,C,C locked evaluation,eval_r22,C,g10002,4,8,0,SOLVED,yes,29.124,29.454,no,staged,,,0,no
+eval_r22.C_g10002_r5,C,C locked evaluation,eval_r22,C,g10002,5,8,0,SOLVED,yes,67.376,67.702,no,staged,,,0,no
+eval_r22.C_g10002_r6,C,C locked evaluation,eval_r22,C,g10002,6,8,0,SOLVED,yes,14.072,14.396,no,staged,,,0,no
+eval_r22.C_g10002_r7,C,C locked evaluation,eval_r22,C,g10002,7,8,0,SOLVED,yes,61.518,61.849,no,staged,,,0,no
+eval_r22.C_g10002_r8,C,C locked evaluation,eval_r22,C,g10002,8,8,0,SOLVED,yes,110.949,111.282,no,staged,,,0,no
+eval_r22.C_g10002_r9,C,C locked evaluation,eval_r22,C,g10002,9,8,0,SOLVED,yes,26.696,27.021,no,staged,,,0,no
+eval_r22.C_g10002_r10,C,C locked evaluation,eval_r22,C,g10002,10,8,0,SOLVED,yes,11.324,11.651,no,staged,,,0,no
+eval_r22.C_g10003_r1,C,C locked evaluation,eval_r22,C,g10003,1,8,0,SOLVED,yes,29.349,29.679,no,staged,,,0,no
+eval_r22.C_g10003_r2,C,C locked evaluation,eval_r22,C,g10003,2,8,0,SOLVED,yes,14.640,14.966,no,staged,,,0,no
+eval_r22.C_g10003_r3,C,C locked evaluation,eval_r22,C,g10003,3,8,0,SOLVED,yes,5.135,5.337,no,low16,,,0,no
+eval_r22.C_g10003_r4,C,C locked evaluation,eval_r22,C,g10003,4,8,0,SOLVED,yes,30.982,31.318,no,staged,,,0,no
+eval_r22.C_g10003_r5,C,C locked evaluation,eval_r22,C,g10003,5,8,0,SOLVED,yes,99.663,99.997,no,staged,,,0,no
+eval_r22.C_g10003_r6,C,C locked evaluation,eval_r22,C,g10003,6,8,0,SOLVED,yes,13.518,13.848,no,low16,,,0,no
+eval_r22.C_g10003_r7,C,C locked evaluation,eval_r22,C,g10003,7,8,0,SOLVED,yes,16.797,17.126,no,low16,,,0,no
+eval_r22.C_g10003_r8,C,C locked evaluation,eval_r22,C,g10003,8,8,0,SOLVED,yes,7.499,7.820,no,staged,,,0,no
+eval_r22.C_g10003_r9,C,C locked evaluation,eval_r22,C,g10003,9,8,0,SOLVED,yes,13.607,13.934,no,low16,,,0,no
+eval_r22.C_g10003_r10,C,C locked evaluation,eval_r22,C,g10003,10,8,0,SOLVED,yes,42.028,42.356,no,low16,,,0,no
+eval_r22.Cp_g10001_r1,C,C locked evaluation,eval_r22,Cp,g10001,1,8,0,SOLVED,yes,104.303,104.641,no,low16,,,0,
+eval_r22.Cp_g10001_r2,C,C locked evaluation,eval_r22,Cp,g10001,2,8,0,SOLVED,yes,6.014,6.224,no,low16,,,0,
+eval_r22.Cp_g10001_r3,C,C locked evaluation,eval_r22,Cp,g10001,3,8,0,SOLVED,yes,4.239,4.435,no,low16,,,0,
+eval_r22.Cp_g10001_r4,C,C locked evaluation,eval_r22,Cp,g10001,4,8,0,SOLVED,yes,22.916,23.250,no,low16,,,0,
+eval_r22.Cp_g10001_r5,C,C locked evaluation,eval_r22,Cp,g10001,5,8,0,SOLVED,yes,7.575,7.779,no,low16,,,0,
+eval_r22.Cp_g10001_r6,C,C locked evaluation,eval_r22,Cp,g10001,6,8,0,SOLVED,yes,34.962,35.293,no,low16,,,0,
+eval_r22.Cp_g10001_r7,C,C locked evaluation,eval_r22,Cp,g10001,7,8,0,SOLVED,yes,100.497,100.835,no,low16,,,0,
+eval_r22.Cp_g10001_r8,C,C locked evaluation,eval_r22,Cp,g10001,8,8,0,SOLVED,yes,40.195,40.526,no,low16,,,0,
+eval_r22.Cp_g10001_r9,C,C locked evaluation,eval_r22,Cp,g10001,9,8,0,SOLVED,yes,26.445,26.775,no,low16,,,0,
+eval_r22.Cp_g10001_r10,C,C locked evaluation,eval_r22,Cp,g10001,10,8,0,SOLVED,yes,4.212,4.414,no,low16,,,0,
+eval_r22.Cp_g10002_r1,C,C locked evaluation,eval_r22,Cp,g10002,1,8,0,SOLVED,yes,9.556,9.878,no,low16,,,0,
+eval_r22.Cp_g10002_r2,C,C locked evaluation,eval_r22,Cp,g10002,2,8,0,SOLVED,yes,16.614,16.953,no,low16,,,0,
+eval_r22.Cp_g10002_r3,C,C locked evaluation,eval_r22,Cp,g10002,3,8,0,SOLVED,yes,20.240,20.570,no,low16,,,0,
+eval_r22.Cp_g10002_r4,C,C locked evaluation,eval_r22,Cp,g10002,4,8,0,SOLVED,yes,14.454,14.778,no,low16,,,0,
+eval_r22.Cp_g10002_r5,C,C locked evaluation,eval_r22,Cp,g10002,5,8,0,SOLVED,yes,14.451,14.771,no,low16,,,0,
+eval_r22.Cp_g10002_r6,C,C locked evaluation,eval_r22,Cp,g10002,6,8,0,SOLVED,yes,55.830,56.171,no,low16,,,0,
+eval_r22.Cp_g10002_r7,C,C locked evaluation,eval_r22,Cp,g10002,7,8,0,SOLVED,yes,41.487,41.821,no,low16,,,0,
+eval_r22.Cp_g10002_r8,C,C locked evaluation,eval_r22,Cp,g10002,8,8,0,SOLVED,yes,3.667,3.866,no,low16,,,0,
+eval_r22.Cp_g10002_r9,C,C locked evaluation,eval_r22,Cp,g10002,9,8,0,SOLVED,yes,14.399,14.724,no,low16,,,0,
+eval_r22.Cp_g10002_r10,C,C locked evaluation,eval_r22,Cp,g10002,10,8,0,SOLVED,yes,69.925,70.252,no,low16,,,0,
+eval_r22.Cp_g10003_r1,C,C locked evaluation,eval_r22,Cp,g10003,1,8,0,SOLVED,yes,597.250,597.701,no,low16,,,0,
+eval_r22.Cp_g10003_r2,C,C locked evaluation,eval_r22,Cp,g10003,2,8,0,SOLVED,yes,105.878,106.209,no,low16,,,0,
+eval_r22.Cp_g10003_r3,C,C locked evaluation,eval_r22,Cp,g10003,3,8,0,SOLVED,yes,105.607,105.936,no,low16,,,0,
+eval_r22.Cp_g10003_r4,C,C locked evaluation,eval_r22,Cp,g10003,4,8,0,SOLVED,yes,207.378,207.717,no,low16,,,0,
+eval_r22.Cp_g10003_r5,C,C locked evaluation,eval_r22,Cp,g10003,5,8,0,SOLVED,yes,114.603,114.940,no,low16,,,0,
+eval_r22.Cp_g10003_r6,C,C locked evaluation,eval_r22,Cp,g10003,6,8,0,SOLVED,yes,142.871,143.212,no,low16,,,0,
+eval_r22.Cp_g10003_r7,C,C locked evaluation,eval_r22,Cp,g10003,7,8,0,SOLVED,yes,218.749,219.084,no,low16,,,0,
+eval_r22.Cp_g10003_r8,C,C locked evaluation,eval_r22,Cp,g10003,8,8,0,SOLVED,yes,45.037,45.367,no,low16,,,0,
+eval_r22.Cp_g10003_r9,C,C locked evaluation,eval_r22,Cp,g10003,9,8,0,SOLVED,yes,175.573,175.913,no,low16,,,0,
+eval_r22.Cp_g10003_r10,C,C locked evaluation,eval_r22,Cp,g10003,10,8,0,SOLVED,yes,456.262,456.726,no,low16,,,0,

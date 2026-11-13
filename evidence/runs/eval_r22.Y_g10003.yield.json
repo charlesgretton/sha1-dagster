@@ -1,0 +1,10 @@
+{
+ "low16": {
+  "distinct": 1,
+  "verified": 1
+ },
+ "staged": {
+  "distinct": 4,
+  "verified": 4
+ }
+}

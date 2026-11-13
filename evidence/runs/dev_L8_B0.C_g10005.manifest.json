@@ -1,0 +1,17 @@
+{
+ "base_clauses": 57255,
+ "clause_order_note": "node clause lists are canonicalised (sorted ranges) by the DAG format",
+ "dag_sha256": "a53fb90d4c0f838d1c2931df4d290780ae7620f084bd596bddc258495118e0ac",
+ "launch_calibrate_joint": "mpirun -n N dagster -m 4 -q 2 -b 0 -e 2 -i 1 -o cal.txt DAG CNF",
+ "launch_race": "mpirun -n N dagster -m 4 -q 2 -b 0 -e 0 -i 1 -o win.txt DAG CNF",
+ "n_components": 6,
+ "n_nodes": 13,
+ "raw": "results/dev_L8_B0.g10005.cnf",
+ "repaired_cnf_sha256": "41f0aff7f62b24142c18b74d159e6e4cd10c9b62c2b8204b9e495a0d59b6e215",
+ "rounds": 22,
+ "shared_clauses": 57263,
+ "validation": {
+  "errors": [],
+  "warnings": []
+ }
+}

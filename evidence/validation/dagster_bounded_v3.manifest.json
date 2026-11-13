@@ -1,0 +1,16 @@
+{
+ "patch": "dagster_bounded_v3",
+ "patch_script_sha256": "68549a28987c5e1b45ac175fc5b2513ab31b4a3e1d70656245844a51e3337c0d",
+ "applied_utc": "2026-10-02T07:23:05Z",
+ "files": {
+  "Worker.cpp": {
+   "stock_sha256": "ba541d7497d270924d70e3c92494d4f01b5df576121984ba7f220c5519994a2b",
+   "patched_sha256": "20c747e8cefe3313a1e91f392bf7e787a975c6aab0ca9bfe59c39dabf70ed92a"
+  },
+  "minisat_solver/minisat_solver.cc": {
+   "stock_sha256": "e6461ff814816e1251596fd6f2c5ad6febeb4350049b55b543cff0ea4030fd6a",
+   "patched_sha256": "1c9267be236555dd4d6ade30e2c09a5c0339c64379f967cb5fba02646356799b"
+  }
+ },
+ "diff_sha256": "173dbcecfae4ac119ada76648d41d1956ce11081b77d80712fa248c7c6636892"
+}

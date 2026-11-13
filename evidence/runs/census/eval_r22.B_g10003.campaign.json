@@ -1,0 +1,28 @@
+{
+ "cpu_affinity": "0-127",
+ "engine_env": {
+  "CUBE_BITS": "",
+  "CUBE_PERMUTE": "",
+  "CUBE_VARS": "",
+  "TINISAT_DAGSTER_CONFIG": "0"
+ },
+ "experiment_id": "eval_r22.B_g10003",
+ "generator_sha256": "037382babb682f848ee6ef013ca19ed95c45deedb60c894275010d7b30f2d307",
+ "hostname": "workstation",
+ "kernel": "5.4.0-148-generic",
+ "kill_after_sec": 5,
+ "logical_cpus": 128,
+ "pinned": 1,
+ "rounds": "22",
+ "scheduler_job": "none",
+ "smt_active": "1",
+ "solver": "portfolio/engines/minisat",
+ "solver_args_template": "-rnd-init -rnd-seed={seed} {cnf} {model}",
+ "solver_seed_start": 1,
+ "solver_seeds_per_target": 64,
+ "solver_sha256": "ab6a33304b8f76d4ee0c2039e2fe7a388c914a28f8ba27bd5ceaefadcb537bf9",
+ "started": "2026-10-12T03:17:38Z",
+ "target_seeds": "10003",
+ "timeout_sec": 1800,
+ "workers": 64
+}

@@ -1,0 +1,21 @@
+1. final models
+   stock_a    VALID
+   stock_b    VALID
+   patched_a  VALID
+   patched_b  VALID
+   all four -o outputs byte-identical: True
+2. emission order (merged by timestamp): identical prefix length
+   stock vs stock   : 792 of 792
+   stock vs patched : 784 of 784
+   stock vs patched : 785 of 785
+   (informational: emission ORDER is timing-dependent in BOTH binaries -- stock has diverged from
+    itself after ~31 emissions in other runs -- so a single pair cannot rank them; the binding
+    equivalence check is the identical verified model above. Compare distributions over repeats.)
+3. UNSAT: stock no solution, patched no solution
+4. realised refinement descendants per parent, and budget events by role
+   staged_L1       VALID | parents 9, max 2, histogram {'1': 8, '2': 1} | budget exhausted {}
+   staged_L8       VALID | parents 4, max 9, histogram {'8': 3, '9': 1} | budget exhausted {}
+   staged_L1_T20k  VALID | parents 15, max 1, histogram {'1': 15} | budget exhausted {'terminal': 7}
+5. quantum sizes of exhausted calls (budget 20000): [20000, 20001, 20002]
+6. invalid value fatal: True
+PHASE A: PASS

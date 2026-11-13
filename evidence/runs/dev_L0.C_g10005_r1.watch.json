@@ -1,0 +1,10 @@
+{
+ "invalid_solutions": [],
+ "replicas_max_workers_on_one_terminal_message": 2,
+ "stall_flagged_at_wall": null,
+ "status": "UNSOLVED",
+ "t0": 1791434299.7374625,
+ "t_end_wall": 319.2872099876404,
+ "terminal_emissions_seen": 0,
+ "terminal_jobs_in_flight": 21
+}
